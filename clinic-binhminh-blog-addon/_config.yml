@@ -1,8 +1,8 @@
 title: "Phòng khám Sản Phụ khoa Bình Minh"
 description: "Bài viết kiến thức sản phụ khoa bởi BS CKII Lê Đàm Vân – Bệnh viện Từ Dũ"
 
-url: "https://vutienluc178.github.io/clinic-binhminh"
-baseurl: "/clinic-binhminh"   # ví dụ: /clinic-binhminh
+url: "https://vutienluc178.github.io/SPK"
+baseurl: "/SPK"   # ví dụ: /clinic-binhminh
 
 theme: null
 markdown: kramdown
