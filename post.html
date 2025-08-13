@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="mx-auto" style="max-width: 800px;">
+  <header class="mb-4">
+    <h1 class="h2 fw-bold">{{ page.title }}</h1>
+    <div class="text-muted">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d/%m/%Y" }}
+      </time>
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.reading_time %} • {{ page.reading_time }} phút đọc{% endif %}
+    </div>
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  {% if page.tags %}
+  <hr class="my-4">
+  <div class="small">Thẻ:
+    {% for tag in page.tags %}
+      <a class="badge text-bg-light text-decoration-none" href="{{ '/tags/#' | append: tag | relative_url }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- JSON-LD Article -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"{{ page.title | escape }}",
+    "datePublished":"{{ page.date | date_to_xmlschema }}",
+    "dateModified":"{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "author": {"@type":"Person","name":"{{ page.author | default: site.author.name | escape }}"},
+    "publisher": {
+      "@type":"Organization",
+      "name":"Phòng khám Sản Phụ khoa Bình Minh",
+      "logo": {"@type":"ImageObject","url":"{{ '/assets/img/og-cover.jpg' | absolute_url }}"}
+    },
+    "image": "{{ page.image | default: site.logo | absolute_url }}",
+    "mainEntityOfPage": "{{ page.url | absolute_url }}"
+  }
+  </script>
+</article>
