@@ -3,6 +3,7 @@ description: "Bài viết kiến thức sản phụ khoa bởi BS CKII Lê Đàm
 
 url: "https://vutienluc178.github.io"
 baseurl: "/SPK"   # ví dụ: /clinic-binhminh
+logo: /assets/img/og-cover.jpg
 
 theme: null
 markdown: kramdown
