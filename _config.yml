@@ -1,0 +1,28 @@
+title: "Phòng khám Sản Phụ khoa Bình Minh"
+description: "Bài viết kiến thức sản phụ khoa bởi BS CKII Lê Đàm Vân – Bệnh viện Từ Dũ"
+url: "https://YOUR_USERNAME.github.io/clinic-binhminh"
+baseurl: ""
+theme: null
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+paginate: 0
+
+# Author
+author:
+  name: "BS CKII Lê Đàm Vân"
+  url: "/"
+  email: ""
+
+# Collections / defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "BS CKII Lê Đàm Vân"
+      image: "/assets/img/og-cover.jpg"
+      lang: "vi"
