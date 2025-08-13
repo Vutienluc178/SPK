@@ -1,9 +1,0 @@
-/* Minimal custom styles */
-body { scroll-behavior: smooth; }
-.hero { min-height: 70vh; }
-.call-float {
-  position: fixed; right: 18px; bottom: 18px; width: 56px; height: 56px; display:flex; align-items:center; justify-content:center;
-}
-/* Utility */
-.rounded-4 { border-radius: 1rem !important; }
-.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; }
